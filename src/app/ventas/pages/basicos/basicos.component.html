@@ -1,5 +1,3 @@
-
-
 <div class="text-layout">
     <h1>Pipes Básicos</h1>
     <p>
@@ -10,23 +8,20 @@
 <div class="p-grid">
 
     <div class="p-col-4">
-        <p-card header="uppercase"
-                [subheader]="nombreLower | uppercase ">
+        <p-card header="uppercase" [subheader]="nombreLower  ">
             {{ nombreLower | uppercase }}
         </p-card>
     </div>
 
     <div class="p-col-4">
-        <p-card header="lowercase"
-                [subheader]="nombreLower | lowercase">
-            {{ nombreLower | lowercase }}
+        <p-card header="lowercase" [subheader]="nombreUpper">
+            {{ nombreUpper | lowercase }}
         </p-card>
     </div>
 
     <div class="p-col-4">
-        <p-card header="titlecase"
-                [subheader]="nombreCompleto | titlecase">
-            {{ nombreCompleto }}
+        <p-card header="titlecase" [subheader]="nombreCompleto ">
+            {{ nombreCompleto | titlecase}}
         </p-card>
     </div>
 
